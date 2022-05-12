@@ -42,7 +42,7 @@ export default function LoginModal(props) {
   });
 
   const submitForm = async  (payload) => {
-    const res = await https.post('http://192.168.1.13:8000/login', payload);
+    const res = await https.post('https://98e1-49-37-39-41.in.ngrok.io/login', payload);
     console.log('res: ', res);
     if (res) {
       localStorage.setItem('user_information', JSON.stringify(res));

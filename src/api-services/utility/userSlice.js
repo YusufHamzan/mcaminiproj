@@ -17,7 +17,14 @@ export const userSlice = createSlice({
             state.uuid = action.payload.uuid;
             state.jwt = action.payload.jwt;
         },
-        clearLoginData:() => initialState
+        clearLoginData:(state, action) => {
+            console.log("CALLED");
+            state.loginState = false;
+            state.uuid = undefined;
+            state.jwt = undefined;
+            state.userName = undefined;
+            localStorage.clear();
+        }
     }
 })
 export const {setLoginData, clearLoginData} = userSlice.actions;

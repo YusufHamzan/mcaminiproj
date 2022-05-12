@@ -1,5 +1,12 @@
 import { setLoginData } from "./userSlice";
 import { useSelector, useDispatch } from "react-redux";
+
+
+
+
+
+// hoook implemented wrongly, not working
+
 const useAuth = () => {
     const {loginState} = useSelector((state) => state.user);
     // console.log('log_no 1 checking redux state: ', userName, loginState && true);

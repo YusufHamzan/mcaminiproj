@@ -4,7 +4,7 @@ import HomePage from "./pages/home.page";
 import InvalidPage from "./pages/invalid.page";
 import LoginModal from "./components/loign/login.modal";
 import { useSelector, useDispatch } from 'react-redux';
-import clearLoginData from './api-services/utility/userSlice';
+import {clearLoginData} from './api-services/utility/userSlice';
 import useAuth from "./api-services/utility/user.auth";
 
 function App() {
