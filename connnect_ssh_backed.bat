@@ -1,0 +1,2 @@
+@REM ECHO OFF
+ssh debian@192.168.1.13
